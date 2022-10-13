@@ -1,0 +1,8 @@
+ 
+on_released_as_vassal = {
+	events = {
+	    action.230 # Convert released megacorps into oligarchies
+	    fixsubject.9005 # Convert democratic megacorps into democracies
+	    fixsubject.9010 # convert imperial megacorps into imperiums
+    }
+}

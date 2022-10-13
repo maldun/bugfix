@@ -1,0 +1,41 @@
+ 
+
+set_merchant_government_effect_democratic = {
+	if = {
+		limit = { has_technology = tech_galactic_administration }
+		change_government = {
+			authority = auth_democratic
+			cooldown = no
+			remove_invalid_civics = yes
+			civics = { civic = civic_merchant_guilds civic = random civic = random }
+		}
+	}
+	else = {
+		change_government = {
+			authority = auth_democratic
+			cooldown = no
+			remove_invalid_civics = yes
+			civics = { civic = civic_merchant_guilds civic = random }
+		}
+	}
+}
+
+set_merchant_government_effect_imperial = {
+	if = {
+		limit = { has_technology = tech_galactic_administration }
+		change_government = {
+			authority = auth_dictatorial
+			cooldown = no
+			remove_invalid_civics = yes
+			civics = { civic = civic_merchant_guilds civic = random civic = random }
+		}
+	}
+	else = {
+		change_government = {
+			authority = auth_dictatorial
+			cooldown = no
+			remove_invalid_civics = yes
+			civics = { civic = civic_merchant_guilds civic = random }
+		}
+	}
+}

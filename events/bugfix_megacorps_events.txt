@@ -1,0 +1,34 @@
+
+namespace = fixsubject 
+
+# Convert sectors released as subjects by megacorps into oligarchies
+country_event = {
+	id = fixsubject.9005
+	hide_window = yes
+	is_triggered_only = yes
+
+	trigger = {
+		has_authority = auth_bugged_corporate_democratic
+		from = { has_authority = auth_bugged_corporate_democratic }
+	}
+
+	immediate = {
+		set_merchant_government_effect_democratic = yes
+	}
+}
+
+# Convert sectors released as subjects by megacorps into oligarchies
+country_event = {
+	id = fixsubject.9010
+	hide_window = yes
+	is_triggered_only = yes
+
+	trigger = {
+		has_authority = auth_bugged_corporate_imperial
+		from = { has_authority = auth_bugged_corporate_imperial }
+	}
+
+	immediate = {
+		set_merchant_government_effect_imperial = yes
+	}
+}
